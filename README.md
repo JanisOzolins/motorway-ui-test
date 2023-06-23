@@ -8,6 +8,7 @@ Welcome to the Motorway UI technical test. This test focuses on user experience,
 - use of more global SCSS variables and mixins
 - modify the API to allow querying images by size which would allow fetching for thumbnail-size images for the gallery view. Then fetch full size ones when opening the modal.
 - more reusable utility functions
+- create a dedicated component for different form input field for easier reusability in the future
 
 ## Set up
 
