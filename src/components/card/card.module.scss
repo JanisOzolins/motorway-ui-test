@@ -39,7 +39,6 @@
 
     &:hover {
       cursor: pointer;
-      background-color: rgba(47, 47, 47, 0.6);
 
       & > .card__overlayContent {
         display: flex;
@@ -49,6 +48,10 @@
         align-items: center;
         color: #fff;
         padding: 16px 32px;
+      }
+
+      & + .card__image {
+        filter: grayscale(100%) brightness(70%);
       }
     }
   }
@@ -62,11 +65,6 @@
   }
 
   &__image {
-    &:hover {
-      cursor: pointer;
-      box-shadow: 0px 8px 16px 0px #5b738b33, 0px 0px 2px 0px #5b738b33;
-    }
-
     & > img {
       display: block;
       width: 100%;

@@ -28,14 +28,6 @@ const Card = ({ image, onModalOpen }: CardProps) => {
       onClick={() => handleModalOpen(image)}
       tabIndex={0}
     >
-      <div className={styles.card__image}>
-        <img
-          src={`${image.url}.webp`}
-          height={300}
-          alt={image.alt_description}
-          loading="lazy"
-        />
-      </div>
       <div className={styles.card__overlay}>
         <div className={styles.card__overlayContent}>
           {image.description && (
@@ -51,6 +43,14 @@ const Card = ({ image, onModalOpen }: CardProps) => {
           </button>
           {imageLikes > 0 && <span>{imageLikes} likes</span>}
         </div>
+      </div>
+      <div className={styles.card__image}>
+        <img
+          src={`${image.url}.webp`}
+          height={300}
+          alt={image.alt_description}
+          loading="lazy"
+        />
       </div>
     </div>
   );
