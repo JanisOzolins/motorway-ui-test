@@ -1,9 +1,13 @@
-
 # Motorway UI Test
-
 
 Welcome to the Motorway UI technical test. This test focuses on user experience, and your skills with HTML, CSS, a11y and leveraging browser APIs.
 
+## Areas for improvement
+
+- improve accessibility on the gallery view (tabable but I would like to implement popup modal open on Enter)
+- use of more global SCSS variables and mixins
+- modify the API to allow querying images by size which would allow fetching for thumbnail-size images for the gallery view. Then fetch full size ones when opening the modal.
+- more reusable utility functions
 
 ## Set up
 
@@ -23,16 +27,15 @@ After this, CRA will open a tab with the app running, usually `localhost:3000`. 
 
 - Feel free to modify or install whatever code you feel is necessary. If installing packages which are wrappers for native browsers APIs please leave a comment explaining why.
 
-
 ## Tasks
 
 ### 1. UI development
 
 Create a responsive UI to display the images returned by the API.
 
-The aim is to demonstrate your experience and knowledge of HTML, CSS, JS and React features; and demonstrate creative thinking in how images can be presented and manipulated.
+The aim is to demonstrate your experience and knowledge of HTML, CSS, JS and React features; and demonstrate creative thinking in how images can be presented and manipulated. ✅
 
-Images aren't optimised and their dimensions are varied, there are .jpg and .webp versions on s3, so you will need to take this into account.
+Images aren't optimised and their dimensions are varied, there are .jpg and .webp versions on s3, so you will need to take this into account. ✅
 
 #### Inspiration:
 
@@ -44,33 +47,29 @@ http://www.artist-developer.com/
 
 Resizable thumbnails
 
-Modal to review full size images
+Modal to review full size images ✅
 
-Image effects or filters
-
+Image effects or filters ✅
 
 ### 2. Performance
 
-The API that is returning images is rather slow. Show how it can be sped up, and show how you would measure the improvement in performance.
-
+The API that is returning images is rather slow. Show how it can be sped up, and show how you would measure the improvement in performance. ✅
 
 ### 3. Forms
 
 One of the oldest yet trickiest parts of web development is forms, so we’d like to see how you handle them.
 
-Add a form to your app with the following fields. The form doesn't need to submit to anywhere, but must validate on the client.
+Add a form to your app with the following fields. The form doesn't need to submit to anywhere, but must validate on the client. ✅
 
-- [ ] Name
-- [ ] Email
-- [ ] Date of birth
-- [ ] Favourite colour
-- [ ] Salary (using a range input)
-
+- [ ] Name ✅
+- [ ] Email ✅
+- [ ] Date of birth ✅
+- [ ] Favourite colour ✅
+- [ ] Salary (using a range input) ✅
 
 ## Time allowed
 
 We appreciate that your time is valuable and recommend you not spend more than 2 hours on these tasks.
-
 
 ## Notes
 
