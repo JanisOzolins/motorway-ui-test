@@ -1,0 +1,17 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}

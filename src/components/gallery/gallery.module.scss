@@ -1,0 +1,14 @@
+@import "../../styles/includes.module.scss";
+
+$duration: 7000;
+
+.section {
+  @include section;
+}
+
+.container {
+  @include container;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}

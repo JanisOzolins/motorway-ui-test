@@ -1,0 +1,16 @@
+$yellow: #fef200;
+$darkYellow: rgb(255, 213, 0);
+$error: #e53935;
+$lightGrey: #f2f2f2;
+
+@mixin section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
