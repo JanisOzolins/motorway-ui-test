@@ -2,6 +2,12 @@
 
 Welcome to the Motorway UI technical test. This test focuses on user experience, and your skills with HTML, CSS, a11y and leveraging browser APIs.
 
+## Notes
+
+- tested on Google Chrome
+- use Typescript & SASS for improved dev experience
+- decided to use react-form-hook to take advantage of better for validation and errors
+
 ## Areas for improvement
 
 - improve accessibility on the gallery view (tabable but I would like to implement popup modal open on Enter)
