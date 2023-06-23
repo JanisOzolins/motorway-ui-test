@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./form.module.scss";
 import { SubmitHandler, useForm } from "react-hook-form";
+import { currencyFormatter } from "../../utils/currency-formatter";
 
 type FormFields = {
   name: string;
@@ -26,6 +27,16 @@ export default function Form() {
     return fieldErrors ? (
       <span className={styles.form__errorMessage}>{fieldErrors.message}</span>
     ) : null;
+  }
+
+  function getEmojis(salary: number): string {
+    const emojis = salary / 25000;
+    let output = "";
+
+    for (let i = 0; i < emojis; i++) {
+      output += "💰";
+    }
+    return output;
   }
 
   return (
@@ -95,7 +106,9 @@ export default function Form() {
             {/* Salary */}
             <label>
               {"Salary expectation:"}
-              {watchSalary && <span>{watchSalary}</span>}
+              {watchSalary && (
+                <span>{currencyFormatter(Number(watchSalary))} </span>
+              )}
               <input
                 type="range"
                 min="25000"
@@ -108,6 +121,12 @@ export default function Form() {
               ></input>
               {getErrorMessage("salary")}
             </label>
+
+            {
+              <div className={styles.form__emojis}>
+                {getEmojis(Number(watchSalary))}
+              </div>
+            }
             <button className={styles.form__submit} type="submit">
               Submit
             </button>
